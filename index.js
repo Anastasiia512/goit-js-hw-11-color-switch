@@ -16,7 +16,8 @@ const changeColor = function () {
     timer = setInterval(() => {
       document.body.style.backgroundColor =
         colors[randomIntegerFromInterval(0, colors.length)];
-    });
+        isActive = true;
+    },1000);
   }
 };
 
